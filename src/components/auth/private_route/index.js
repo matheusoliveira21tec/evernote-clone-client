@@ -1,10 +1,11 @@
 import React from 'react';
-import { Navigate } from 'react-router-dom';
+import { Navigate, Outlet, useLocation } from 'react-router-dom';
 
-const privateRoute = ({ component: Component, ...rest }) => (
+const privateRoute = () => (
         localStorage.getItem('user')
-            ? <Component {...rest} />
+            ? <Outlet />
             : <Navigate replace to={{ pathname: '/login' }} />
 )
+
 
 export default privateRoute;
