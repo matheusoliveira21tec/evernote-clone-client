@@ -15,7 +15,7 @@ const Rotas = () => (
             <Route exact path='/login' element={<Login />} />
             <Route exact path='/' element={<PrivateRoute />}>
                 <Route exact path='/notes' element={<NotesIndex />} />
-                <Route exact path='/user/edit' element={<UserEdit />} />
+                <Route exact path='/users/edit' element={<UserEdit />} />
             </Route>
         </Routes>
     </BrowserRouter>

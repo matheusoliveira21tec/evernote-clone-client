@@ -1,0 +1,16 @@
+@import "./custom_colors";
+
+.users {
+    padding-top: 40px !important;
+
+    .card-content {
+        padding: 40px;
+        background-color: $custom-purple-darker;
+    }
+
+    .users-edit {
+        .title {
+            margin-bottom: 15px;
+        }
+    }
+}
